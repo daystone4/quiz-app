@@ -1,0 +1,11 @@
+.high-scores-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 4rem;
+}
+
+.high-score {
+  font-size: clamp(1.5rem, 10vw, 2.5rem);
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
