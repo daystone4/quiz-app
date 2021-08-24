@@ -46,27 +46,27 @@ let score = 0
 let choice = ''
 let correctAnswer;
  
-const getQuiz = async () => {
-    deselectAll()
-    try {
-        const res = await fetch('https://opentdb.com/api.php?amount=5&category=9&difficulty=medium&type=multiple')
-        const data = await res.json()
+// const getQuiz = async () => {
+//     deselectAll()
+//     try {
+//         const res = await fetch('https://opentdb.com/api.php?amount=5&category=9&difficulty=medium&type=multiple')
+//         const data = await res.json()
         
-        const quizData = data.results[currentQuiz]
-        console.log(quizData)
-        question.innerText = quizData.question
-        const answers = [...quizData.incorrect_answers, quizData.correct_answer]
-        const shuffledAnswers = answers.sort((a,b) => 0.5 - Math.random())
-        console.log(shuffledAnswers)
+        // const quizData = data.results[currentQuiz]
+        // console.log(quizData)
+        // question.innerText = quizData.question
+        // const answers = [...quizData.incorrect_answers, quizData.correct_answer]
+        // const shuffledAnswers = answers.sort((a,b) => 0.5 - Math.random())
+        // console.log(shuffledAnswers)
         // a_text.innerText = shuffled[0]
         // b_text.innerText = shuffled[1]
         // c_text.innerText = shuffled[2]
         // d_text.innerText = shuffled[3]
        
     
-    } catch (error) {
-        alert(error)
-    }
+    // } catch (error) {
+    //     alert(error)
+    // }
 
     // btn.addEventListener('click', () => {
     //     let choice = ''
@@ -81,7 +81,7 @@ const getQuiz = async () => {
     //    return choice
     // })
     
-}
+// }
 
 const deselectAll = () => {
     answerElements.forEach(answer => answer.checked = false)
@@ -100,4 +100,4 @@ const deselectAll = () => {
 //    return choice
 // })
 
-getQuiz()
+// getQuiz()

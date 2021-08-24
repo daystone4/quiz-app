@@ -3,34 +3,17 @@
     <head>
        <meta charset="UTF-8" />
        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-       <link rel="stylesheet" href="./style.css"> 
+       <link rel="stylesheet" href="./css/style.css"> 
        <title>Quiz App</title>
     </head>
     <body>
-        <div class="container quiz">
-            <div class="quiz-content">
-                <h2 class="question">Question Text</h2>
-                <ul>
-                    <li>
-                        <input type="radio" name="answer" id="a" class="answer">
-                        <label for="a" id="a_text" class="answers">Question</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="answer" id="b" class="answer">
-                        <label for="b" id="b_text" class="answers">Question</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="answer" id="c" class="answer">
-                        <label for="c" id="c_text" class="answers">Question</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="answer" id="d" class="answer">
-                        <label for="d" id="d_text" class="answers">Question</label>
-                    </li>
-                </ul>
-            </div>
-            <button class="submit-btn">Submit</button>
+        <div class="container">
+            <div class="home flex-center flex-column">
+                <h1>Quick Quiz</h1>
+                <a class="btn" href="/game.html">Play</a>
+                <a class="btn" href="/highscores.html">High Scores</a>
+              </div>
         </div>
-        <script src="./script.js"></script>
+        <script src="./js/script.js"></script>
     </body>
 </html>
